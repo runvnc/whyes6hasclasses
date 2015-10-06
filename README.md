@@ -31,7 +31,7 @@ Darn.  It says the word 'class' all over that page.  And the example uses `util.
 
 But I am wondering then, what is the standard way to inherit from a _something_ in ES6?  Is it `util.inherits`?  Is that in the spec?   Maybe I am just confused by that example.
 
-So then I wondered if there was another better example that would explain the correct way to do this stuff in ES6.  So I what's the second most popular system using JavaScript these days?
+So then I wondered if there was another better example that would explain the correct way to do this stuff in ES6.  So I thought, what's the second most popular system using JavaScript these days?
 
 ## React.js 'classes'??
 
