@@ -2,18 +2,18 @@
 
 After seeing so much hate for classes in the Node community, I started re-thinking my enthusiasm.
 
-## Returning an object from a factor function
+## Returning an object from a factory function
 
 ```javascript
 function createPerson(firstName) {                                                                            
   return {                                                                                    
     sayHello: function() {                                                                                        
-      setTimeout(() => {                                                                                                
-        console.log("Hello, I'm " + firstName);                                                                         
-      }, 50);                                                                                                           
+      setTimeout(() => {                                                                                          
+        console.log("Hello, I'm " + firstName);                                                                       
+      }, 50);                                                                                                         
     },                                                            
-    test: 10                                                                                                            
-  };                                                                                                                    
+    test: 10                                                                                                          
+  };                                                                                                                  
 }                                                                                                                                                                       
 var t = createPerson('ted');                                                                                            
 t.sayHello();                
@@ -45,12 +45,15 @@ So I googled 'React ES6' and this blog entry came up: https://facebook.github.io
 
 > We figured that we're not in the business of designing a class system. We just want to use whatever is the idiomatic JavaScript way of creating classes.
 
-Wait a minute.. this guy has no idea what he is talking about.  Who is this guy?  Hmm.. weird.  It says he is an engineer at Facebook.  I thought they had better screening than that?  I mean, he doesn't even know JavaScript!  He thinks JavaScript should have classes!  They should fire him.
+Wait a minute.. this guy has no idea what he is talking about.  Who is this guy?  Hmm.. weird.  It says he is an engineer at Facebook.  I thought they had better screening than that??  I mean, he doesn't even know JavaScript!  He thinks JavaScript should have classes!  They should fire him!
 
 ## What the heck is going on?
 
-So here we have probably the two most popular JavaScript systems in the world in Node.js and React and one has documentation full of the word 'class' and on the other a developer openly admits to being excited about classes and
+So here we have probably the two most popular JavaScript systems in the world in Node.js and React and one has documentation full of the word 'class' and on the other a developer _openly admits to being excited about classes and even uses 'class' and 'extend' in a code example_!??
 
-The answer is no, there is only one standard way to inherit from a _something_ in ES6.  That is using `class` and `extends` keywords.
+How can this be?? Do all of these Node and React guys just not know how real JavaScript programmers code??  Surely someone would have clued them in by now that you aren't inheriting from 'classes', you are using prototypes (or something).
 
+## The answer
+
+The answer is that _classes and inheritance are core aspects of JavaScript development and there is a standard way to do them in ES6 using the `class` and `extends` keywords_.
 
